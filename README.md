@@ -3,6 +3,12 @@
 LB2でTwitchの視聴者に対してポイントを付与するための仕組みです  
 Mikuiaのようなものと思ってください
 
+## Version
+| branch | version | link | remark |
+|--------|---------|------|--------|
+| stable | N/A | N/A | βテスト中につき正式リリース前となります |
+| test | 0.0.4 | https://github.com/icbgames/LioranBoard2DeckData/tree/v0.0.4 |  |
+
 ## 機能紹介
 以下のようなことができます
 * チャット参加者に対してポイントを付与
