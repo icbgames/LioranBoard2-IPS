@@ -6,8 +6,8 @@ Mikuiaのようなものと思ってください
 ## Version
 | branch | version | link | remark |
 |--------|---------|------|--------|
-| stable | N/A | N/A | βテスト中につき正式リリース前となります |
-| test | 0.0.4 | https://github.com/icbgames/LioranBoard2DeckData/tree/v0.0.4 |  |
+| stable | 1.0.0 | https://github.com/icbgames/LioranBoard2DeckData/tree/v1.0.0 |    |
+| test   | 1.0.0 | https://github.com/icbgames/LioranBoard2DeckData/tree/v1.0.0 |    |
 
 ## 機能紹介
 以下のようなことができます
