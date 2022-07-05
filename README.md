@@ -7,7 +7,7 @@ Mikuiaのようなものと思ってください
 | branch | version | link | remark |
 |--------|---------|------|--------|
 | stable | 1.0.0 | https://github.com/icbgames/LioranBoard2-IPS/tree/v1.0.0 |    |
-| test   | 1.0.1 | https://github.com/icbgames/LioranBoard2-IPS/tree/v1.0.1 |    |
+| test   | 1.0.2 | https://github.com/icbgames/LioranBoard2-IPS/tree/v1.0.2 |    |
 
 ## 機能紹介
 以下のようなことができます
