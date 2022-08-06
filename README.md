@@ -9,6 +9,14 @@ Mikuiaのようなものと思ってください
 | stable | 1.0.0 | https://github.com/icbgames/LioranBoard2-IPS/tree/v1.0.0 |    |
 | test   | 1.0.3 | https://github.com/icbgames/LioranBoard2-IPS/tree/v1.0.3 |    |
 
+## Special Thanks
+試験導入とデバッグにご協力いただいた方々のおかげでスムーズな開発・改修ができております
+- きるきるさん (https://www.twitch.tv/kirukiru_21)
+- おむぎさん (https://www.twitch.tv/omugino)
+- 他多数
+
+ご協力感謝いたします
+
 ## 機能紹介
 以下のようなことができます
 * チャット参加者に対してポイントを付与
