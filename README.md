@@ -1,13 +1,13 @@
-# IPS - ICB Point System for LioranBoard2
+# IPS - ICB Point System for SAMMI
 ## What is this?
-LB2でTwitchの視聴者に対してポイントを付与するための仕組みです  
+SAMMIでTwitchの視聴者に対してポイントを付与するための仕組みです  
 Mikuiaのようなものと思ってください
 
 ## Version
 | branch | version | link | remark |
 |--------|---------|------|--------|
 | stable | 1.0.0 | https://github.com/icbgames/LioranBoard2-IPS/tree/v1.0.0 |    |
-| test   | 1.0.3 | https://github.com/icbgames/LioranBoard2-IPS/tree/v1.0.3 |    |
+| test   | 1.0.4 | https://github.com/icbgames/LioranBoard2-IPS/tree/v1.0.4 |    |
 
 ## Special Thanks
 試験導入とデバッグにご協力いただいた方々のおかげでスムーズな開発・改修ができております
@@ -37,11 +37,11 @@ Mikuiaのようなものと思ってください
 * ポイントの名称、および単位を任意に設定可
 
 ## 導入手順
-### LB2の導入
+### SAMMIの導入
 詳細は割愛しますので、ポイントだけ記しておきます。
-LB2をインストールしたうえで、Twitchとの連携、OBSとの連携を実施してください
+SAMMIをインストールしたうえで、Twitchとの連携、OBSとの連携を実施してください
 
-#### LB2のインストール
+#### SAMMIのインストール
 インストール先は任意の場所で大丈夫ですが、管理者権限がないとファイルを書き込むことのできない場所には置かない方が良いと思います。
 
 #### Twitchアカウントとの連携
@@ -50,32 +50,30 @@ LB2をインストールしたうえで、Twitchとの連携、OBSとの連携�
 そうしておかないと、自動投稿された発言を削除することができなくなります。(botへの対策)
 
 #### OBSとの連携
-まずOBSのwebsocketプラグインを導入する必要があります。現時点では下記プラグインのver 4.9.1が適切なのでこちらをご利用ください。
-[obs-websocket 4.9.1](https://github.com/obsproject/obs-websocket/releases/tag/4.9.1)
+まずOBSのwebsocketプラグインを導入する必要があります。現時点では下記プラグインのver 4.9.1-compatが適切なのでこちらをご利用ください。
+[obs-websocket 4.9.1-compat](https://github.com/obsproject/obs-websocket/releases/tag/4.9.1-compat)
 
-OBS側の設定ポートとLB2側の設定ポートが揃っていればOKです
+OBS側の設定ポートとSAMMI側の設定ポートが揃っていればOKです
 
 
-#### Transmitterの設定
-LB2側の `Settings` で `Allow Stream Deck and Transmitter` にチェックを入れるのを忘れないように。
-
-OBS側で `transmitter.html` をブラウザリソースでローカルファイルとして取り込んでください。
+#### Bridgeの設定
+OBS側で `bridge.html` をブラウザリソースでローカルファイルとして取り込んでください。
 
 
 ### 設定ファイルの配置
-LB2のインストール先に `IPS` という名前のディレクトリを作成し、本レポジトリの `ips.ini` と `bots.csv` を配置してください。
+SAMMIのインストール先に `IPS` という名前のディレクトリを作成し、本レポジトリの `ips.ini` と `bots.csv` を配置してください。
 
-LB2を `D:\LioranBoard\` にインストールしているとした場合、 `D:\LioranBoard\IPS\ips.ini` というパスになっていればOKです。
+SAMMIを `D:\LioranBoard\` にインストールしているとした場合、 `D:\LioranBoard\IPS\ips.ini` というパスになっていればOKです。
 
 ### Deckごと一括でインポートする場合
-`deck/IPS_decks.json` の中身をクリップボードにコピーし、LB2のDeck一覧画面から `Paste Deck` を行ってください。
+`deck/IPS_decks.json` の中身をクリップボードにコピーし、SAMMIのDeck一覧画面から `Paste Deck` を行ってください。
 
 ### ボタンを個別でインポートする場合
 #### Deckの作成
 別途Deckを作成する必要があるので、任意の名称でDeckを作成してください。
 
 #### 各種ボタンのインポート
-本レポジトリの `deck/button` ディレクトリ配下の各種jsonファイルの中身をクリップボードにコピーし、LB2にてインポートしてボタンを作成します
+本レポジトリの `deck/button` ディレクトリ配下の各種jsonファイルの中身をクリップボードにコピーし、SAMMIにてインポートしてボタンを作成します
 
 ## 設定ファイルの設定値の解説
 ### basic
@@ -145,7 +143,7 @@ LB2を `D:\LioranBoard\` にインストールしているとした場合、 `D:
 | points_for_subgift_tier3 | int | Tier3のサブスクギフトを贈ってくれたユーザーに付与するポイントを設定します |
 
 ## ポイントランキング生成
-LB2を起動した状態で `Ctrl` + `F11` キーを押すことでランキング生成処理が開始します  
+SAMMIを起動した状態で `Ctrl` + `F11` キーを押すことでランキング生成処理が開始します  
 1ユーザーにつき2秒のウェイトを挟んでいるため、時間を要します
 
 ## お問い合わせ
