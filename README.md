@@ -7,7 +7,7 @@ Mikuiaのようなものと思ってください
 | branch | version | link | remark |
 |--------|---------|------|--------|
 | stable | 1.0.0 | https://github.com/icbgames/LioranBoard2-IPS/tree/v1.0.0 |    |
-| test   | 1.0.4 | https://github.com/icbgames/LioranBoard2-IPS/tree/v1.0.4 |    |
+| test   | 1.0.5 | https://github.com/icbgames/LioranBoard2-IPS/tree/v1.0.5 |    |
 
 ## Special Thanks
 試験導入とデバッグにご協力いただいた方々のおかげでスムーズな開発・改修ができております
@@ -35,6 +35,7 @@ Mikuiaのようなものと思ってください
   * 順位、1つ上の順位のユーザーとのポイント差を表示可(設定にてON/OFF選択)
 * 自分のチャンネルの視聴者のポイントランキングを生成
 * ポイントの名称、および単位を任意に設定可
+* 特定のユーザーに任意のポイントを付与 (マイナスも可)
 
 ## 導入手順
 ### SAMMIの導入
@@ -147,4 +148,4 @@ SAMMIを起動した状態で `Ctrl` + `F11` キーを押すことでランキ�
 1ユーザーにつき2秒のウェイトを挟んでいるため、時間を要します
 
 ## お問い合わせ
-[Discord](https://discord.gg/Y4XfnGpk)にてご相談やご意見等々受け付けております
+[Discord](https://discord.gg/Ry9kqRryN)にてご相談やご意見等々受け付けております
